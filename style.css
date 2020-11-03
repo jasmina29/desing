@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #e74c3c url(image/header/-daniel-chodusov.png) 0/100% 100% no-repeat;
+    height: 500px;
+    position: relative;
+}
+
+#logo p {
+    color: #ffffff;
+    font-family: "Myriad Pro - Cond";
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#top-header {
+    margin: 0 10%;
+    padding-top: 58px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    width: 390px;
+    height: 17px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+nav a {
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    color: #ffffff;
+    font-family: "Myriad Pro - Cond";
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #e74c3c;
+}
+
+#content-head {
+    width: 614px;
+    height: 104px;
+    margin: 153px auto 168px;
+}
+
+#content-head p:first-of-type {
+    color: #ffffff;
+    font-family: Rokkitt;
+    font-size: 47px;
+    font-weight: 400;
+    letter-spacing: -0.63px;
+    text-align: center;
+}
+#content-head hr {
+    height: 1px;
+    background-color: #ffffff;
+}
+
+#content-head p:last-of-type {
+    color: #ffffff;
+    font-family: Quicksand;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+}
+.red-btn {
+    display: block;
+    width: 218px;
+    height: 57px;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 20px;
+    margin: 0 auto;
+}
+header button {
+   margin-top: -34px!important;
+    
+}
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    display: block;
+}
+#raph {
+    color: #e74c3c;
+    font-family: "Myriad Pro";
+    font-size: 30px;
+    line-height: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.58px;
+    text-align: center;
+    margin: 153px 0 55px;
+}
+.text {
+    color: #95a5a6;
+    font-family: "Myriad Pro";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.29px;
+}
+.text-main {
+    text-align: center;
+    max-width: 762px;
+    margin: 0 auto 75px;
+}
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.skills > div {
+    min-width: 200px;
+    max-width: 250px;
+    padding-top: 80px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.skill1 {
+    background-image: url(image/skills/Sketching.png);
+}
+.skill2 {
+    background-image: url(image/skills/Design.png);
+}
+.skill3 {
+    background-image: url(image/skills/Finalize.png);
+}
+.skill-name {
+    color: #e74c3c;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.32px;
+    text-align: center;
+    margin: 20px 0;
+}
+.skill-descrip {
+    font-size: 15px;
+    text-align: justify;
+}
+@media (max-width: 657px) {
+    .skills {
+        flex-direction: column;
+    }
+    .skills > div {
+        margin: 0 auto;
+        max-width: 380px;
+    }
+}
+main hr {
+    margin: 72px 0;
+    background-color: #e4e8e8;
+}
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pf-img {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 55px;
+    position: relative;
+    opacity: 0.7;
+    transition: opacity 0.5s ease-out;
+} 
+@media (max-width: 817px) {
+    .portfolio {
+        justify-content: space-around;
+    }
+}
+.pf-img:hover {
+    opacity: 1.0;
+}
+.pf-img1 {
+    background-image: url(image/portfolio/img1.png);
+}
+.pf-img2 {
+    background-image: url(image/portfolio/img2.png);
+}
+.pf-img3 {
+    background-image: url(image/portfolio/img3.png);
+}
+.pf-img4 {
+   background-image: url(image/portfolio/img4.png); 
+}
+.view-more {
+    width: 50px;
+    height: 50px;
+    background: #e74c3c url(image/portfolio/icon-search.png) center center no-repeat;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+}
+.view-more:hover {
+    background-size: 20px 20px;
+}
+.view-more:active {
+    background-size: 16px 16px;
+}
+.view-more, .discription {
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+.pf-img:hover .view-more, .pf-img:hover .discription {
+    opacity: 1;
+}
+.discription {
+    height: 90px;
+    margin-top: 181px;
+    background-color: #e74c3c;
+    border-top: 6px solid rgba(155, 51, 40, 0.7);
+    padding-top: 23px;
+    padding-left: 20px;
+}
+.title {
+    color: #ffffff;
+    font-family: "Rokkitt";
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+}
+.discr {
+    color: #9d3b31;
+    font-family: "Myriad Pro";
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.24px;
+}
+.vm-btn {
+    text-align: left;
+    padding-left: 40px;
+    background-image: url(image/portfolio/icon-arrow.png);
+    background-repeat: no-repeat;
+    background-position: 156px center;
+}
+
+#get-in {
+    color: #e74c3c;
+    font-family: "Rokkitt";
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: -0.63px;
+    text-align: center;
+    margin-bottom: 74px;
+}
+form {
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form > input {
+    background-color: rgba(149, 165, 166, 0.26);
+    border: none;
+    height: 50px; /*если не указать это, то в IE будет некорректно отображаться размер поля ввода по высоте*/
+    padding: 0 20px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.input-ne {
+    width: 350px;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+@media (max-width:717px) {
+    form {
+        justify-content: space-around;
+    }
+}
+.can-help {
+    background-color: rgba(149, 165, 166, 0.26);
+    border: none;
+    margin: 20px 0 151px;
+    padding-top: 30px;
+    padding-left: 30px;
+	overflow: auto; /* = Убираем скролл */
+    resize: none; /* = Убираем увеличение */
+    font-size: 20px;
+    max-width: 768px;
+    width: 100%;
+    height: 250px;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+footer {
+    /* position: relative; */
+    height: 200px;
+    background-color: #e74c3c;
+    padding-top: 1px;
+
+}
+.social-network {
+    max-width: 700px;
+    margin: -50px auto 0;
+    /* position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    top: -30px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social-network a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 6px solid rgba(231, 76, 60, 0.59);
+    /* background-color: #fff;
+    background-repeat: no-repeat; 
+    background-position: center center; */
+    background: white no-repeat center center;
+}
+#tw {
+    background-image: url(image/social-nw/twitter.png)
+}
+#dr {
+    background-image: url(image/social-nw/dribbble.png);
+}
+#fb {
+    background-image: url(image/social-nw/facebook.png);
+}
+.text-footer {
+    margin-top: 50px;
+    max-width: 961px;
+    margin: 60px auto 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.text-footer p {
+    color: #ffffff;
+    font-family: "Rokkitt";
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.38px;
+}
